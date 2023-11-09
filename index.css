@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links li a:hover{
+    color: #ff5361;
+}
+
+.reg-btn{
+    background-color: rgb(214, 151, 74);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.reg-btn:hover{
+    background-color: #ff5361;
+    color: #fff;
+    
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding-top: 19%;
+}
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 8% auto;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background:  rgb(214, 151, 74);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 25px;
+    margin-top: 2px;
+
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* -------------places-------------------- */
+.sub-title{
+    margin: 50px 0px 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+}
+.places{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+.container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.places div{
+    position: relative;
+}
+.places div span{
+    margin: 5px;
+}
+.places div span h3{
+    text-align: center;
+}
+
+/* ----------------Wonders of world--------------- */
+
+.wonders{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+/* .wonders div img{
+    width: 100%;
+
+} */
+.wonders div h3{
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+/* .wonders div{
+    position: relative;
+} */
+
+
+
+/* ------------cta----------- */
+
+.cta{
+    margin: 80px 0px;
+    background-image: linear-gradient(to right, #3f2321, transparent),url(banner\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.cta p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.cta-btn{
+    background-color: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+/* ---------------footer--------------- */
+
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background-color: #999;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    border-radius: 2px;
+
+}
